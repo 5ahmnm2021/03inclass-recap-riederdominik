@@ -1,37 +1,31 @@
 # 03inclass-recap-riederdominik
 
-README
-
-Project description:
+Project description: A simple UI project to utilise a scene switching script.
 
 Projekt
 
-Development platform:
+Development platform: MacOS X 11.2 (Beta), Unity 2020.1.5f1, Visual Studio 2019
 
-(OS, Unity Version, Visual Studio Version, used SDKs)
-
-Target platform:
-
-WebGL, Mobile, VR Device incl. reference resolution
+Target platform: WebGL (960x600)
 
 Visuals:
 
 Screenshots (concept and experience), Video
 
-Necessary setup/execution steps:
+Necessary setup/execution steps: /
 
 Installation process, e.g. step by step instructions that I can run the project after cloning it
 
-Third party material:
+Third party material: /
 
 (if used Fonts, Sounds, Music, Graphics, Materials, Code etc.)
 
-Project state:
+Project state: Scene Switch Working 80%
 
 incl. progress in percent
 
-Limitations:
+Limitations: Still need to code functionality of individual screens.
 
-Lessons Learned:
+Lessons Learned: How I program a scene switch script.
 
-Copyright by you :)
+Copyright by riederdominik
