@@ -20,12 +20,10 @@ Third party material: /
 
 (if used Fonts, Sounds, Music, Graphics, Materials, Code etc.)
 
-Project state: Scene Switch Working 80%
+Project state: DONE 100%
 
-incl. progress in percent
+Limitations: /
 
-Limitations: Still need to code functionality of individual screens.
-
-Lessons Learned: How I program a scene switch script.
+Lessons Learned: Revising C# with Unity.
 
 Copyright by riederdominik

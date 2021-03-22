@@ -8,40 +8,47 @@ public class AdditionScript : MonoBehaviour
     public InputField if1;
     public InputField if2;
     public Text sum;
-    public Text message;
 
-    public Color rot = Color.red;
-    public Color weiss = Color.white;
-
-    public float if1Float;
-    public float if2Float;
-
+    bool num1 = true;
+    bool num2 = true;
+    
     public void Addition()
     {
+        float if1Float = 0;
+        float if2Float = 0;
+
+        string errorMessage = "Geben Sie eine gültige Zahl ein";
+
         try
         {
             if1Float = float.Parse(if1.text);
-            if1.image.color = weiss;
-            message.text = "";
+            if1.image.color = Color.white;
+            num1 = true;
         }
         catch (System.Exception)
         {
-            message.text = "Geben Sie eine gültige Zahl ein";
-            if1.image.color = rot;
+            if1.image.color = Color.red;
+            if1.text = errorMessage;
+            num1 = false;
         }
 
         try
         {
             if2Float = float.Parse(if2.text);
-            if2.image.color = weiss
+            if2.image.color = Color.white;
+            num2 = true;
         }
         catch (System.Exception)
         {
-            message.text = "Geben Sie eine gültige Zahl ein";
-            if2.image.color = rot;
+            if2.image.color = Color.red;
+            if2.text = errorMessage;
+            num2 = false;
         }
 
-        sum.text = (if1Float + if2Float).ToString();
-        Debug.Log("Die Addition ergibt: " + sum.text);
+        if(num1 && num2)
+        {
+            sum.text = (if1Float + if2Float).ToString();
+            Debug.Log("Die Addition ergibt: " + sum.text);
+        }
     }
 }
