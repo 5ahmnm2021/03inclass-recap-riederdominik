@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class AdditionScript : MonoBehaviour
@@ -9,15 +7,15 @@ public class AdditionScript : MonoBehaviour
     public InputField if2;
     public Text sum;
 
-    bool num1 = true;
-    bool num2 = true;
+    private bool num1 = true;
+    private bool num2 = true;
     
     public void Addition()
     {
         float if1Float = 0;
         float if2Float = 0;
 
-        string errorMessage = "Geben Sie eine gültige Zahl ein";
+        string errorMessage = "Geben Sie eine gültige Zahl ein!";
 
         try
         {
@@ -48,7 +46,6 @@ public class AdditionScript : MonoBehaviour
         if(num1 && num2)
         {
             sum.text = (if1Float + if2Float).ToString();
-            Debug.Log("Die Addition ergibt: " + sum.text);
         }
     }
 }

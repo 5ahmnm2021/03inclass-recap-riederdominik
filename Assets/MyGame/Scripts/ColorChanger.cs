@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class ColorChanger : MonoBehaviour
 {
-    public Image color;
+    public Image imageColor;
 
     public void ChangeColor()
     {
@@ -19,7 +17,7 @@ public class ColorChanger : MonoBehaviour
 
         if (Input.GetKeyDown("space"))
         {
-            color.GetComponent<Image>().color = colors[Random.Range(0, colors.Length)];
+            imageColor.color = colors[Random.Range(0, colors.Length)];
         }
     }
 
